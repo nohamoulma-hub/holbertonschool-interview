@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""Module that determines if the boxes can be open"""
+
+
 def canUnlockAll(boxes):
+    """function who determine if all the boxes can be opened"""
+
     n = len(boxes)
     keychain = [0]
     while True:
