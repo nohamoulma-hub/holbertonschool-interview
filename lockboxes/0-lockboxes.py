@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def canUnlockAll(boxes):
     n = len(boxes)
     keychain = [0]
