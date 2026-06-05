@@ -21,13 +21,13 @@ if __name__ == "__main__":
     try:
         for line in sys.stdin:
             try:
-                counter += 1
                 parts = line.split()
                 total_size += int(parts[8])
                 # "in" pour savoir si parts[6] existe dans status_code
                 if parts[7] in status_code:
                     # on accède à la valeur via la clé
                     status_code[parts[7]] += 1
+                counter += 1
                 if counter % 10 == 0:
                     print_stats(total_size, status_code)
             except (IndexError, ValueError):
