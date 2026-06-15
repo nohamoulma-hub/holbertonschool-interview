@@ -7,8 +7,9 @@ ligne = 0
 colonne = 0
 queens = []
 
+
 def valid_entry():
-    
+
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         exit(1)
@@ -37,6 +38,7 @@ def chessboard(queens, colonne, ligne):
             return False
     return True
 
+
 def solve(queens, ligne):
     if ligne == N:
         print(queens)
@@ -46,6 +48,7 @@ def solve(queens, ligne):
             queens.append([ligne, colonne])
             solve(queens, ligne + 1)
             queens.pop()
+
 
 if __name__ == "__main__":
     N = valid_entry()
