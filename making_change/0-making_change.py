@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+""" Module making change"""
 
 def makeChange(coins, total):
 
