@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Module making change"""
 
+
 def makeChange(coins, total):
 
     if total <= 0:
@@ -15,4 +16,5 @@ def makeChange(coins, total):
                     min_number_coin[amount],
                     min_number_coin[amount - coin] + 1
                 )
-    return min_number_coin[total] if min_number_coin[total] != float('inf') else -1
+    result = min_number_coin[total]
+    return result if result != float('inf') else -1
