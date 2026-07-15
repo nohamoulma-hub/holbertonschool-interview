@@ -7,7 +7,7 @@ def isWinner(x, nums):
     maria_wins = 0
     ben_wins = 0
 
-    for n in nums:
+    for n in nums[0:x]:
         if n < 2:
             ben_wins += 1
         else:
@@ -33,4 +33,4 @@ def isWinner(x, nums):
     if ben_wins > maria_wins:
         return "Ben"
     else:
-        return "None"
+        return None
